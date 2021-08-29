@@ -1,5 +1,6 @@
 package com.keviniest.uem;
 
+import com.keviniest.uem.registry.ModBlocks;
 import com.keviniest.uem.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -10,5 +11,6 @@ public class Client implements ModInitializer {
     @Override
     public void onInitialize() {
         ModItems.registerItems();
+        ModBlocks.registerBlocks();
     }
 }

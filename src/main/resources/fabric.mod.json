@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "uem",
+  "version": "${version}",
+
+  "name": "Underwater Exploration Mod",
+  "description": "Underwater Exploration Mod is a fabric 1.17 mod that improve aquatic gameplay.",
+  "authors": [
+    "Keviniest"
+  ],
+  "contact": {
+    "sources": "https://github.com/keviniest/Underwater-Exploration-Mod"
+  },
+
+  "license": "gpl-3.0",
+  "icon": "assets/uem/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.keviniest.uem.Client"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

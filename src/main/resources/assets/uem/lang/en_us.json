@@ -1,4 +1,6 @@
 {
   "item.uem.titanium": "Titanium",
-  "block.uem.titanium_block": "Titanium Block"
+  "block.uem.titanium_block": "Titanium Block",
+  "item.uem.aluminium": "Aluminium",
+  "item.uem.silicon": "Silicon"
 }

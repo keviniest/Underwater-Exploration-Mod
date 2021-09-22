@@ -18,6 +18,6 @@ public class ModBlocks {
             .strength(5.5f, 30.0f));
 
     public static void registerBlocks() {
-        Registry.register(Registry.BLOCK, new Identifier(Client.MOD_ID, "titanium_block"), TITANIUM_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier(Client.modID, "titanium_block"), TITANIUM_BLOCK);
     }
 }

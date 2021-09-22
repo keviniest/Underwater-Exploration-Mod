@@ -1,11 +1,11 @@
-package com.keviniest.uem.registry;
+package com.keviniest.uem.registry.items;
 
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 
-public class ModArmour implements ArmorMaterial {
+public class DivingSuitArmour implements ArmorMaterial {
 
     private static final int[] BASE_DURABILITY = new int[] {260, 260, 260, 260};
     private static final int[] PROTECTION_VALUES = new int[] {3, 3, 3, 3};

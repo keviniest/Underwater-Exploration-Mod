@@ -1,6 +1,8 @@
 package com.keviniest.uem.registry;
 
 import com.keviniest.uem.Client;
+import com.keviniest.uem.registry.items.DivingSuitArmour;
+import com.keviniest.uem.registry.items.KnifeTool;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -14,12 +16,14 @@ public class ModItems {
 
     public static final BlockItem TITANIUM_BLOCK = new BlockItem(ModBlocks.TITANIUM_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
 
-    public static final ArmorMaterial SILICON_MAT = new ModArmour();
+    public static final ArmorMaterial SILICON_MAT = new DivingSuitArmour();
 
     public static final Item DIVING_SUIT_HELMET = new ArmorItem(SILICON_MAT, EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.TOOLS));
     public static final Item DIVING_SUIT_CHEST = new ArmorItem(SILICON_MAT, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.TOOLS));
     public static final Item DIVING_SUIT_LEG = new ArmorItem(SILICON_MAT, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.TOOLS));
     public static final Item DIVING_SUIT_BOOT = new ArmorItem(SILICON_MAT, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.TOOLS));
+
+    public static final ToolItem SURVIVAL_KNIFE = new SwordItem(KnifeTool.INSTANCE, 4, 0.1f, new Item.Settings().group(ItemGroup.TOOLS));
 
     public static void registerItems() {
         Registry.register(Registry.ITEM, new Identifier(Client.modID, "titanium"), TITANIUM);
@@ -32,6 +36,8 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Client.modID, "diving_suit_chest"), DIVING_SUIT_CHEST);
         Registry.register(Registry.ITEM, new Identifier(Client.modID, "diving_suit_leg"), DIVING_SUIT_LEG);
         Registry.register(Registry.ITEM, new Identifier(Client.modID, "diving_suit_boot"), DIVING_SUIT_BOOT);
+
+        Registry.register(Registry.ITEM, new Identifier(Client.modID, "survival_knife"), SURVIVAL_KNIFE);
     }
 
 }

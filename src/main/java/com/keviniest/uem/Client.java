@@ -1,5 +1,6 @@
 package com.keviniest.uem;
 
+import com.keviniest.uem.registry.ModArmour;
 import com.keviniest.uem.registry.ModItems;
 import com.keviniest.uem.registry.ModBlocks;
 import net.fabricmc.api.ModInitializer;
@@ -13,6 +14,7 @@ public class Client implements ModInitializer {
     public void onInitialize() {
         ModItems.registerItems();
         ModBlocks.registerBlocks();
+        ModArmour.registerArmours();
     }
 
     public static void sendInfoMessage(String message) {

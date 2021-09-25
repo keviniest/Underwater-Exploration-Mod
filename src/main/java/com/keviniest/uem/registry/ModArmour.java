@@ -1,7 +1,7 @@
 package com.keviniest.uem.registry;
 
 import com.keviniest.uem.Client;
-import com.keviniest.uem.registry.items.DivingSuitArmour;
+import com.keviniest.uem.registry.items.armour.DivingSuitArmour;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;

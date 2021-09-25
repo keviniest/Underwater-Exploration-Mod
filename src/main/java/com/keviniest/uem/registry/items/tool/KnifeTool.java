@@ -1,38 +1,35 @@
-package com.keviniest.uem.registry.items;
+package com.keviniest.uem.registry.items.tool;
 
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-public class TitaAlloyTool implements ToolMaterial {
+public class KnifeTool implements ToolMaterial {
 
-    /*
-    TODO : register this
-     */
-    public static final TitaAlloyTool INSTANCE = new TitaAlloyTool();
+    public static final KnifeTool INSTANCE = new KnifeTool();
 
     @Override
     public int getDurability() {
-        return 5218;
+        return 1500;
     }
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 5.0f;
-    }
-
-    @Override
-    public float getAttackDamage() {
-        return 0;
-    }
-
-    @Override
-    public int getMiningLevel() {
         return 3;
     }
 
     @Override
+    public float getAttackDamage() {
+        return 0.0f;
+    }
+
+    @Override
+    public int getMiningLevel() {
+        return 1;
+    }
+
+    @Override
     public int getEnchantability() {
-        return 18;
+        return 5;
     }
 
     @Override

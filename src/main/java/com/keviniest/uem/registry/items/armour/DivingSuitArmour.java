@@ -1,4 +1,4 @@
-package com.keviniest.uem.registry.items;
+package com.keviniest.uem.registry.items.armour;
 
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;

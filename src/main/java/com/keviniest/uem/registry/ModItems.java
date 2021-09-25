@@ -1,8 +1,7 @@
 package com.keviniest.uem.registry;
 
 import com.keviniest.uem.Client;
-import com.keviniest.uem.registry.items.KnifeTool;
-import com.keviniest.uem.registry.items.TitaAlloyTool;
+import com.keviniest.uem.registry.items.tool.KnifeTool;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
